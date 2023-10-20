@@ -4,11 +4,9 @@ from django_countries.fields import CountryField
 from ckeditor_uploader.fields import RichTextUploadingField
 from app_main.models import CustomUser
 
-from django.db.models import CharField
-
 # Create your models here.
 class Airport(models.Model):
-    city = CharField(max_length=122, null=True)
+    city = models.CharField(max_length=122, null=True)
     country = CountryField()
     name = models.CharField(max_length=122, null=True)
     code = models.CharField(max_length=3, null=True)
