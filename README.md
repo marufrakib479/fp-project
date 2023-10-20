@@ -1,2 +1,0 @@
-# VISTAGO
-A Travel Agency.
