@@ -9,7 +9,7 @@ class TourLocationModelAdmin(admin.ModelAdmin):
 
 admin.site.register(TourLocationModel, TourLocationModelAdmin)
 
-class TourLocationModelAdmin(admin.ModelAdmin):
+class TourPackageModelAdmin(admin.ModelAdmin):
     list_display = ('package_title', 'package_price', 'get_tour_location', 'get_discount',)
     search_fields = ['package_title', 'package_price',]
 
@@ -24,7 +24,7 @@ class TourLocationModelAdmin(admin.ModelAdmin):
             return "N/A"
         
 
-admin.site.register(TourPackageModel, TourLocationModelAdmin)
+admin.site.register(TourPackageModel, TourPackageModelAdmin)
 
 
 class TourPackageImagesAdmin(admin.ModelAdmin):
